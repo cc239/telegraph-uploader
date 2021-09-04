@@ -1,28 +1,27 @@
 {
   "name": "telegraph-uploader",
-  "version": "2.0.1",
+  "version": "2.1.1",
   "description": "A package that helps you to upload media files to telegra.ph",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/loskir/telegraph-uploader.git"
-  },
-  "keywords": [
-    "telegraph",
-    "upload"
-  ],
-  "author": "Loskir",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/loskir/telegraph-uploader/issues"
-  },
-  "homepage": "https://github.com/loskir/telegraph-uploader#readme",
   "dependencies": {
     "form-data": "^2.5.1",
     "node-fetch": "^2.6.0",
+    "restify": "^8.5.1",
     "stream-to-array": "^2.3.0"
-  }
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "repository": {
+    "url": "https://github.com/OverflowCat/telegraph-uploader"
+  },
+  "license": "MIT",
+  "keywords": [
+    "simpread",
+    "telegraph",
+    "telegram"
+  ]
 }

@@ -1,0 +1,28 @@
+h1. telegraph-uploader
+
+p. @telegraph-uploader@ is a simple post API for uploading images to Telegram's "telegra.ph":https://telegra.ph.
+
+h2. Usage
+
+h3. Request
+
+p. *POST* to @/byurl@ with @{url: window.btoa(encodeURIComponent(url))}@.
+
+h3. Response
+
+h4. Succeeded
+
+bc. {
+  ok: true,
+  result: {
+    link: result.link,
+    src: url
+  }
+}
+
+h4. Failed
+
+bc. {
+  ok: false,
+  result: {}
+}
